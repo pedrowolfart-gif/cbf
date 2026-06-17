@@ -3,66 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portal da Seleção - Copa 2026</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-
-    <h1>CBF</h1>
-   <h2>venha conhecer os jogadores</h2>
-
+        <div class="logo-area">
+            <img src="img/cbl.png" alt="cbl" width="60">
+            <h1>CBF</h1>
+        </div>
+        <h2>Venha conhecer os jogadores</h2>
+        <nav>
+            <ul>
+                <li><a href="#convocados">Convocados</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#apoio">Apoio</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
 
-        <section class = "Convocados">
-        <h2>Lista Oficial de Convocados - Copa do Mundo 2026</h2>
+        <section id="convocados" class="Convocados">
+            <h2>Lista Oficial de Convocados - Copa do Mundo 2026</h2>
 
-    <h3>Goleiros</h3>
-    <ol>
-        <li>Alisson (Liverpool)</li>
-        <li>Ederson (Fenerbahçe)</li>
-        <li>Weverton (Grêmio)</li>
-    </ol>
+            <h3>Goleiros</h3>
+            <ol class="cards-container">
+                <div class="card">
+                    <img src="img/alisson.webp" alt="alisson">
+                    <li>Alisson (Liverpool)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Ederson.webp" alt="Ederson">
+                    <li>Ederson (Fenerbahçe)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Weverton.webp" alt="Weverton">
+                    <li>Weverton (Grêmio)</li>
+                </div>
+            </ol>
+
             <h3>Defensores (Laterais e Zagueiros)</h3>
-    <ol start="4">
-        <li>Alex Sandro (Flamengo)</li>
-        <li>Bremer (Juventus)</li>
-        <li>Danilo (Flamengo)</li>
-        <li>Douglas Santos (Zenit)</li>
-        <li>Gabriel Magalhães (Arsenal)</li>
-        <li>Ibañez (Al-Ahli)</li>
-        <li>Léo Pereira (Flamengo)</li>
-        <li>Marquinhos (Paris Saint-Germain)</li>
-    </ol>
+            <ol class="cards-container" start="4">
+                <div class="card">
+                    <img src="img/Alex Sandro.webp" alt="alex Sandro">
+                    <li>Alex Sandro (Flamengo)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Bremer.webp" alt="Bremer">
+                    <li>Bremer (Juventus)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Danilo.webp" alt="Danilo">
+                    <li>Danilo (Flamengo)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Douglas Santos.webp" alt="Douglas">
+                    <li>Douglas Santos (Zenit)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Gabriel Magalhães.webp" alt="Gabriel Magalhães">
+                    <li>Gabriel Magalhães (Arsenal)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Ibañez.webp" alt="Ibañez">
+                    <li>Ibañez (Al-Ahli)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Léo Pereira.webp" alt="Léo Pereira">
+                    <li>Léo Pereira (Flamengo)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Marquinhos.webp" alt="Marquinhos">
+                    <li>Marquinhos (Paris Saint-Germain)</li>
+                </div>
+            </ol>
 
-    <h3>Meio-Campistas</h3>
-    <ol start="12">
-        <li>Bruno Guimarães (Newcastle United)</li>
-        <li>Casemiro (Manchester United)</li>
-        <li>Danilo Santos (Botafogo)</li>
-        <li>Éderson (Atalanta)</li>
-        <li>Fabinho (Al-Ittihad)</li>
-        <li>Lucas Paquetá (Flamengo)</li>
-    </ol>
+            <h3>Meio-Campistas</h3>
+            <ol class="cards-container" start="12">
+                <div class="card">
+                    <img src="img/Bruno Guimarães.webp" alt="Bruno Guimarães">
+                    <li>Bruno Guimarães (Newcastle United)</li>
+                </div>
+                <div class="card">
+                    <img src="img/casemiro.webp" alt="casemiro">
+                    <li>Casemiro (Manchester United)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Danilo Santos.webp" alt="Danilo Santos">
+                    <li>Danilo Santos (Botafogo)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Ederson.webp" alt="Éderson">
+                    <li>Éderson (Atalanta)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Fabinho.webp " alt="Fabinho">
+                    <li>Fabinho (Al-Ittihad)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Lucas Paquetá.webp" alt="Lucas Paquetá">
+                    <li>Lucas Paquetá (Flamengo)</li>
+                </div>
+            </ol>
 
-    <h3>Atacantes</h3>
-    <ol start="18">
-        <li>Endrick (Lyon)</li>
-        <li>Gabriel Martinelli (Arsenal)</li>
-        <li>Igor Thiago (Brentford)</li>
-        <li>Luiz Henrique (Zenit)</li>
-        <li>Matheus Cunha (Manchester United)</li>
-        <li>Neymar Junior (Santos)</li>
-        <li>Raphinha (Barcelona)</li>
-        <li>Rayan (Bournemouth)</li>
-        <li>Vinicius Junior (Real Madrid)</li>
-    </ol>
+            <h3>Atacantes</h3>
+            <ol class="cards-container" start="18">
+                <div class="card">
+                    <img src="img/endrik.jpg" alt="endrik">
+                    <li>Endrick (Lyon)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Gabriel Martinelli.webp" alt="Gabriel Martinelli">
+                    <li>Gabriel Martinelli (Arsenal)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Igor Thiago.webp" alt="Igor Thiago">
+                    <li>Igor Thiago (Brentford)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Luiz Henrique.webp" alt="Luiz Henrique">
+                    <li>Luiz Henrique (Zenit)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Matheus Cunha.webp" alt="Matheus Cunha">
+                    <li>Matheus Cunha (Manchester United)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Neymar Junior.webp" alt="Neymar Junior">
+                    <li>Neymar Junior (Santos)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Raphinha.webp" alt="Raphinha">
+                    <li>Raphinha (Barcelona)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Rayan (Bournemouth).webp" alt="Rayan">
+                    <li>Rayan (Bournemouth)</li>
+                </div>
+                <div class="card">
+                    <img src="img/Vinicius Junior (Real Madrid).webp" alt="Vinicius Junior">
+                    <li>Vinicius Junior (Real Madrid)</li>
+                </div>
+            </ol>
         </section>
 
-        <Section class = "Agenda de Jogos">
-    <h2>Agenda de Jogos - Fase de Grupos</h2>
+        <section id="agenda" class="Agenda de Jogos">
+            <h2>Agenda de Jogos - Fase de Grupos</h2>
             <p>O Brasil está no Grupo C. Confira os confrontos:</p>
             
             <table>
@@ -99,11 +187,9 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
 
-        </Section>
-
-        <section class ="formulario">
-
+        <section id="apoio" class="formulario">
             <h2> Envie sua Mensagem de Apoio</h2>
             
             <form action="#" method="POST">
@@ -130,11 +216,9 @@
 
     <footer>
         <p>&copy; 2026 Confederação Brasileira de Futebol - Todos os direitos reservados.</p>
-        
-       <div class="social-networks">
+        <div class="social-networks">
             <a href="https://www.instagram.com/brasil/" target="_blank">Instagram</a>
         </div>
-
     </footer>
   
 </body>
