@@ -1,0 +1,205 @@
+:root {
+  --cor-verde: #009B3A;
+  --cor-amarela: #FEDF00;
+  --cor-azul: #002776;
+  --cor-branca: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+header {
+  background-color: var(--cor-verde);
+  color: var(--cor-branca);
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  border-bottom: 5px solid var(--cor-amarela);
+}
+
+header .logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav a {
+  color: var(--cor-branca);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: var(--cor-amarela);
+}
+
+main {
+  padding: 40px 5%;
+}
+
+.Convocados {
+  margin-bottom: 50px;
+}
+
+.Convocados h2, .Convocados h3 {
+  color: var(--cor-azul);
+  margin-bottom: 20px;
+}
+
+.Convocados ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  list-style: none; 
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+
+.Convocados li {
+  background-color: var(--cor-amarela);
+  border: 2px solid var(--cor-verde);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  color: var(--cor-azul);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.Convocados li img {
+  margin-top: 15px;
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--cor-branca);
+}
+
+.agenda-de-jogos {
+  margin-bottom: 50px;
+  background-color: var(--cor-branca);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.agenda-de-jogos h2 {
+  color: var(--cor-verde);
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+thead {
+  background-color: var(--cor-azul);
+  color: var(--cor-branca);
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+.formulario {
+  background-color: var(--cor-branca);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-top: 5px solid var(--cor-azul);
+  max-width: 600px;
+  margin: 0 auto; 
+}
+
+.formulario h2 {
+  color: var(--cor-azul);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--cor-verde);
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+button[type="submit"] {
+  background-color: var(--cor-azul);
+  color: var(--cor-branca);
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--cor-verde); 
+}
+
+footer {
+  background-color: var(--cor-azul);
+  color: var(--cor-branca);
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: var(--cor-amarela);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
