@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CBF - Copa do Mundo 2026</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="hexa.html">
+    <link rel="stylesheet" href="styles hexa.css">
 </head>
 <body>
 
     <header>
         <div class="logo-titulo">
-            <img src="img/cbl.png" alt="Logo CBF" width="60">
+            <img src="img/cbf.png" alt="Logo CBF" width="60">
             <div>
                 <h1>CBF</h1>
                 <h2>Venha conhecer os jogadores</h2>
@@ -20,7 +20,6 @@
         <nav>
             <ul>
                 <li><a href="hexa.html" style="color: #FEDF00;">História das Copas</a></li>
-
                 <li><a href="#convocados">Convocados</a></li>
                 <li><a href="#agenda">Agenda de Jogos</a></li>
                 <li><a href="#formulario">Enviar Apoio</a></li>
@@ -29,10 +28,10 @@
     </header>
 
     <main>
-
+      
         <section id="convocados" class="Convocados">
             <h2>Lista Oficial de Convocados - Copa do Mundo 2026</h2>
-
+            
             <h3>Goleiros</h3>
             <ol>
                 <li>
@@ -154,10 +153,11 @@
             </ol>
         </section>
 
+
         <section id="agenda" class="agenda-de-jogos">
             <h2>Agenda de Jogos - Fase de Grupos</h2>
             <p>O Brasil está no Grupo C. Confira os confrontos:</p>
-            
+
             <table>
                 <thead>
                     <tr>
@@ -194,6 +194,7 @@
             </table>
         </section>
 
+        <!-- SEÇÃO FORMULÁRIO -->
         <section id="formulario" class="formulario">
             <h2>Envie sua Mensagem de Apoio</h2>
             
@@ -216,7 +217,6 @@
                 <button type="submit">Enviar Mensagem</button>
             </form>
         </section>
-
     </main>
 
     <footer>
@@ -225,6 +225,68 @@
             <a href="https://www.instagram.com/brasil/" target="_blank">Instagram Oficial</a>
         </div>
     </footer>
-  
+
+    <script>
+        const formulario = document.querySelector("#formulario form");
+        
+        if (formulario) {
+            formulario.addEventListener("submit", function(evento) {
+                // Impede a página de recarregar
+                evento.preventDefault(); 
+                
+                // Pega o nome digitado no input
+                const nomeUsuario = document.getElementById("nome").value;
+                
+                
+                const sectionForm = document.getElementById("formulario");
+                sectionForm.innerHTML = `
+                    <div style="text-align: center; padding: 40px; border: 3px solid #FEDF00; background-color: #009c3b; color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <h2 style="color: #FEDF00; margin-bottom: 15px; font-size: 24px;"> Apoio Registrado, Rumo ao Hexa! </h2>
+                        <p style="font-size: 18px;">Muito obrigado pela força, <strong>${nomeUsuario}</strong>! Sua mensagem de apoio foi enviada para a Seleção em 2026! 🇧🇷</p>
+                    </div>
+                `;
+            });
+        }
+
+        
+        const tituloCBF = document.querySelector(".logo-titulo h1");
+        
+        if (tituloCBF) {
+            tituloCBF.style.transition = "color 0.3s ease"; 
+            
+          
+            tituloCBF.addEventListener("mouseover", function() {
+                tituloCBF.style.color = "#009c3b"; 
+            });
+            
+            tituloCBF.addEventListener("mouseout", function() {
+                tituloCBF.style.color = ""; 
+            });
+        }
+
+        const secaoAgenda = document.getElementById("agenda");
+        
+        if (secaoAgenda) {
+            const botaoTorcida = document.createElement("button");
+            botaoTorcida.textContent = "📣 Gritar Gol da Seleção!";
+            botaoTorcida.style.cssText = "display: block; margin: 25px auto 10px auto; padding: 12px 24px; font-weight: bold; background-color: #FEDF00; color: #002f6c; border: 2px solid #009c3b; border-radius: 5px; cursor: pointer; font-size: 16px; transition: transform 0.2s;";
+            
+            const textoGrito = document.createElement("p");
+            textoGrito.style.cssText = "text-align: center; font-size: 18px; font-weight: bold; color: #009c3b; min-height: 30px; margin-top: 15px;";
+            
+            secaoAgenda.appendChild(botaoTorcida);
+            secaoAgenda.appendChild(textoGrito);
+            
+            botaoTorcida.addEventListener("click", function() {
+                textoGrito.textContent = "GOOOOOOOOOOOOOL DO BRASIL!!! RUMO AO HEXA! 🇧🇷";
+                
+                botaoTorcida.style.transform = "scale(0.95)";
+                setTimeout(() => {
+                    botaoTorcida.style.transform = "scale(1)";
+                }, 100);
+            });
+        }
+    </script>
+
 </body>
 </html>
